@@ -1,47 +1,56 @@
-import { createGlobalStyle } from "styled-components";
+import * as styled from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = styled.createGlobalStyle`
   :root {
-    --red: #E52E4D;
-    --blue:#5429CC;
-    --green: #33CC95;
+    --red: #e52e4d;
+    --blue: #5429cc;
+    --green: #33cc95;
 
-    --blue-light:#6933FF;
+    --blue-light: #6933ff;
 
-    --text-title:#363F5F;
-    --text-body:#969CB3;
+    --text-title: #363f5f;
+    --text-body: #969cb3;
 
-    --background: #F0F2F5;
-    --shape: #FFFFFF;
+    --background: #f0f2f5;
+    --shape: #ffffff;
   }
 
-  *{
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-  html{
-    @media (max-width: 1080px){
-      font-size: 93.75%; 
+  html {
+    @media (max-width: 1080px) {
+      font-size: 93.75%;
     }
 
-    @media(max-width: 720px) {
-      font-size: 87.5%; 
+    @media (max-width: 720px) {
+      font-size: 87.5%;
     }
   }
 
   body {
-    background: var(---background);
+    background: var(--background);
     -webkit-font-smoothing: antialised;
   }
 
-  body, input, textarea, button {
-    font-family: 'Poppins', sans-serif;
+  body,
+  input,
+  textarea,
+  button {
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
   }
 
-  h1, h2, h3, h4, h5, h6, strong {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong {
     font-weight: 600;
   }
 
