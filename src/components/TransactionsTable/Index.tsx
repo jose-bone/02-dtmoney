@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { Container } from "./styles";
 
@@ -50,12 +50,8 @@ export function TransactionsTable() {
                   )}
                 </td>
               </tr>
-          <tr>
-            <td>Aluguer</td>
-            <td className="withdraw">- $2.000</td>
-            <td>Casa</td>
-            <td>25/11/2021</td>
-          </tr>
+            );
+          })}
         </tbody>
       </table>
     </Container>
