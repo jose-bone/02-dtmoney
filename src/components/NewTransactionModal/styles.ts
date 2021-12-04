@@ -54,6 +54,11 @@ export const TransactionTypeContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
+`;
+
+interface RadioBoxProps {
+  isActive: boolean;
+}
 
   button {
     height: 4rem;
