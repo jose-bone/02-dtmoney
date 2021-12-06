@@ -1,15 +1,5 @@
-import { useEffect, useState } from "react";
-import { api } from "../../services/api";
+import { useTransactions } from "../../hooks/useTransactions";
 import { Container } from "./styles";
-
-interface Transaction {
-  id: number;
-  title: string;
-  amount: number;
-  type: string;
-  category: string;
-  createdAt: string;
-}
 
 export function TransactionsTable() {
   const { transactions } = useTransactions();
@@ -43,8 +33,7 @@ export function TransactionsTable() {
                 )}
               </td>
             </tr>
-            );
-          })}
+          ))}
         </tbody>
       </table>
     </Container>
